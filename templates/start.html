@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyBazaar Tracker</title>
+</head>
+<body>
+<form class="form-inline" method="POST" action="{{ url_for('read_item') }}">
+    <div class="form-group">
+        <div class="input-group">
+            <select name="choice" , method="GET" , action="/">
+                {% for item in bz_list %}
+                <option value="{{item}}" SELECTED>{{item}}</option>
+                "
+                {% endfor %}
+                <option value="All" SELECTED>All</option>
+                <input type="submit" name="submit_button" value="Submit">
+            </select>
+        </div>
+    </div>
+</form>
+</body>
+</html>

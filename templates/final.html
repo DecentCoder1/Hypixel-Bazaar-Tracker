@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ all.get("item") }}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+    <h1>Item: {{ all.get("item") }}</h1>
+    <h1>Buy: {{ all.get("buy") }}</h1>
+    <h1>Sell: {{ all.get("sell") }}</h1>
+</body>
+</html>
